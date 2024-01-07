@@ -1,0 +1,16 @@
+
+<div class="container mt-5">
+    <button (click)="toggleVisualizzaAuto()">{{testoBottone}}</button>
+    <br>
+    <div class="row" *ngIf="visualizzaAuto && auto && auto.length > 0">
+      <div *ngFor="let automobile of auto" class="col-sm-4">
+        <h3>{{auto.nome}}</h3>
+        <p>Prima apparizione: {{auto.primaApparizione}}</p>
+        <p>Cavalli: {{auto.Cavalli}}</p>
+        <br><br><br>
+      </div>
+    </div>
+    <div *ngIf="!(visualizzaAuto && auto && auto.length > 0)">
+      <p>Nessuna auto</p>
+    </div>
+  </div>
