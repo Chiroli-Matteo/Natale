@@ -1,24 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-second-component',
-  templateUrl: './second-component.component.html',
-  styleUrls: ['./second-component.component.css']
+  selector: 'app-secondo',
+  templateUrl: './secondo.component.html',
+  styleUrls: ['./secondo.component.css']
 })
-export class SecondComponentComponent {
-  visualizzaAuto: boolean = false;
-  testoBottone = 'Mostra auto'
-  auto = [
-    { nome: 'ford gt', primaApparizione: 1964, cavalli: '558' },
-    { nome: 'lancia delta integrale martini', primaApparizione: 1988, cavalli: '211' },
-    { nome: 'ferrari roma', primaApparizione: 2023, cavalli: '620' },
-    { nome: 'ferrari 430 scuderia', primaApparizione: 2004, cavalli: '490' },
-    { nome: 'ford raptor', primaApparizione: 2010, cavalli: '700' },
-    { nome: 'lambroghini huracan', primaApparizione: 2014, cavalli: '640' }
-  ];
+export class SecondoComponent {
+  title = 'esercitazione_natale'
+    lista_auto = [
+      {id: 1, name: 'Lamborghini Aventador', cavalli: 'cavalli -', potenza:  770,euro: 'euro -' ,prezzo: 430.730  },
+      {id: 2, name: 'ferrari Roma', cavalli: 'cavalli -' ,potenza: 620,euro: 'euro -' ,prezzo:217.001  },
+      {id: 3, name: 'porsche 911 gt s', cavalli: 'cavalli -',potenza:460,euro: 'euro -' ,prezzo:  161.733},
+      {id: 4, name: 'Bugatti', cavalli: 'cavalli -'  , potenza:1500,euro:'euro -' , prezzo: 9792500 },
 
-  toggleVisualizzaSupereroi() {
-    this.visualizzaAuto = !this.visualizzaAuto;
-    this.testoBottone = this.visualizzaAuto ? 'Nascondi auto' : 'Mostra auto';
-  }
+
+    ];
+
 }

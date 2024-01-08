@@ -1,10 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { second-component import { second-component } from './second-component';
- } from './second-component';
+import { SecondoComponent } from './secondo.component';
 
 describe('SecondoComponent', () => {
-  let component: second-component;
+  let component: SecondoComponent;
   let fixture: ComponentFixture<SecondoComponent>;
 
   beforeEach(() => {
